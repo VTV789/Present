@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func experiment(sender: UIButton) {
+        let nextController = UIImagePickerController()
+        self.presentViewController(nextController, animated: true, completion:nil)
     }
 }
 
