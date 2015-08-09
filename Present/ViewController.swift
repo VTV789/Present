@@ -17,13 +17,13 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
     @IBAction func experiment(sender: UIButton) {
-        let nextController = UIImagePickerController()
-        self.presentViewController(nextController, animated: true, completion:nil)
+        let image = UIImage()
+        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        self.presentViewController(controller, animated: true, completion: nil)
     }
 }
 
