@@ -20,6 +20,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func experiment(sender: UIButton) {
+        
+        //let nextController = UIImagePickerController()
+        //self.presentViewController(nextController, animated: true, completion: nil)
+    //}
+    
+//        //Activity View Controller
+//        let image = UIImage()
+//        let nextController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+//        self.presentViewController(nextController, animated: true, completion:nil)
+
         //Alert View Controller
         let controller = UIAlertController()
         controller.title = "Test alert"
