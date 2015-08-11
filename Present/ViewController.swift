@@ -21,8 +21,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func experiment(sender: UIButton) {
-        let image = UIImage()
-        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        //Presenting the ActivityViewController
+
+        let controller = UIActivityViewController()
         self.presentViewController(controller, animated: true, completion: nil)
     }
 }
