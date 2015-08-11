@@ -9,22 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
+    
+    
     @IBAction func experiment(sender: UIButton) {
-        //Presenting the ActivityViewController
-
-        let controller = UIActivityViewController()
+        //Alert View Controller
+        let controller = UIAlertController()
+        controller.title = "Test alert"
+        controller.message = "This is a test"
+        
+        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default) { action in self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        controller.addAction(okAction)
         self.presentViewController(controller, animated: true, completion: nil)
     }
 }
-
